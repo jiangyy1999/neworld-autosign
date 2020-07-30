@@ -6,6 +6,10 @@ spring:
     url: jdbc:mysql://mysql:3306/t_neworld
     username: root
     password: jyy518518
+    platform: mysql
+    schema: sql/t_neworld.sql
+    initialization-mode: always
+
   security:
     user:
       name: adminn
