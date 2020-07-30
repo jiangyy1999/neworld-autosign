@@ -57,6 +57,11 @@ public class AutoSignTool {
         return logList;
     }
 
+    public List<LogEntities> checkInByUser(UserEntities user) {
+        user.setPasswd(encoderTool.decode(user.getPasswd()));
+        return checkIn(user);
+    }
+
     /**
      * @param user : 解密后的user
      * @return 登录一条记录 , 签到一条记录

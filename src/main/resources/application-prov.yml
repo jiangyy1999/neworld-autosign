@@ -1,0 +1,12 @@
+server:
+  port: 10000
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/t_neworld
+    username: root
+    password: jyy518518
+  security:
+    user:
+      name: adminn
+      password: adminn
